@@ -8,13 +8,14 @@ import {
   NavDropdown,
   FormControl
 } from "react-bootstrap";
+import NavbarBrand from "./NavbarBrand";
 
 const NavbarComponent = () => {
   return (
     <>
       <Navbar bg='dark' variant='dark' expand='lg'>
-        <Navbar.Brand href='#home'>Catalog</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <NavbarBrand />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
             <Nav.Link href='#home'>Home</Nav.Link>
